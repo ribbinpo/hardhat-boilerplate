@@ -1,7 +1,7 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
-import { getAccounts } from "@/utils/account.util";
+import { getAccounts } from "./utils/account.util";
 
 const config: HardhatUserConfig = {
   solidity: {
