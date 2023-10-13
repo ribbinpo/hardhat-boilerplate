@@ -42,7 +42,7 @@ export const setAddress = (
   const addressList = getAddressList();
 
   const pathArr = addressPath.split("/");
-  const dirPath = [...pathArr].slice(-1).join("/");
+  const dirPath = [...pathArr].slice(0, pathArr.length - 1).join("/");
 
   if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath);
   try {
