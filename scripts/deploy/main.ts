@@ -1,7 +1,7 @@
-import { deployLock } from "./deployLock";
+import { deployLogger } from "./deployLogger";
 
 async function main() {
-  const lock = await deployLock();
+  const lock = await deployLogger();
 }
 
 // We recommend this pattern to be able to use async/await everywhere

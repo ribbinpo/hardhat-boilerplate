@@ -22,9 +22,9 @@ const config: HardhatUserConfig = {
     ],
   },
   networks: {
-    bsc_testnet: {
+    "bsc-testnet": {
       url: process.env.URL_BSC_TESTNET || "",
-      accounts: getAccounts("bsc_testnet"),
+      accounts: getAccounts(),
     },
   },
   gasReporter: {
